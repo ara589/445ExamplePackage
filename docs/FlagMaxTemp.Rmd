@@ -1,0 +1,20 @@
+---
+title: "My Analysis"
+author: "Angelica Alcala"
+date: "2023-11-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This will do the analysis
+
+
+```{r}
+library(ggplot2)
+ggplot(FlagMaxTemp, aes(x=Date, y=MaxTemp)) +
+  geom_line()
+```
+
